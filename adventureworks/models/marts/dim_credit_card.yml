@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_credit_card
+    description: This table contains the credit card information for customers.
+    columns:
+      - name: credit_card_key
+        description: The surrogate key of the credit card
+        data_tests:
+          - not_null
+          - unique
+      - name: credit_card_id 
+        description: The natural key of the credit card
+        data_tests:
+          - not_null
+          - unique
+      - name: card_type 
+        description: The type of the credit card (e.g., Visa, MasterCard)
+        data_tests:
+          - not_null
+      - name: expiration_date 
+        description: The expiration date of the credit card
+        data_tests:
+          - not_null

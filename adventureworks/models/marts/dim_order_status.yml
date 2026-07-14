@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_order_status
+    description: This table contains the order status information for orders.
+    columns:
+      - name: order_status_key
+        description: The surrogate key of the order status
+        data_tests:
+          - not_null
+          - unique
+      - name: order_status_id 
+        description: The natural key of the order status
+        data_tests:
+          - not_null
+          - unique
+      - name: status_description 
+        description: The description of the order status (e.g., in_process, approved, backordered, rejected, shipped, cancelled)
+        data_tests:
+          - not_null
