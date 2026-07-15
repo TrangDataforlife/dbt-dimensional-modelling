@@ -1,6 +1,6 @@
 With stg_order_status as (
-    SELECT distinct OrderStatus as order_status
-    FROM {{ref 'salesorderheader'}} 
+    SELECT distinct status as order_status
+    FROM {{ref ('salesorderheader')}} 
 )
 
 select

@@ -5,21 +5,22 @@ models:
     columns:
       - name: customer_key
         description: The surrogate key of the customer
-        data_tests:
-          - not_null
+        tests:
           - unique
-      - name: customer_id 
+          - not_null
+
+      - name: customerid
         description: The natural key of the customer
-        data_tests:
+        tests:
           - not_null
           - unique
-      - name: person_id 
-        description: The natural key of the person
-        data_tests:
-          - not_null
-          - unique
-      - name: store_id 
-        description: The natural key of the store
-        data_tests:
-          - not_null
-          - unique
+          
+      - name: fullname
+        description: The customer name. Adopted as customer_fullname when person name is not null.
+
+      - name: businessentityid
+      
+      - name: storebusinessentityid
+
+      - name: storename
+        description: The store name.

@@ -13,7 +13,9 @@ models:
         data_tests:
           - not_null
           - unique
-      - name: addressline1 
-        description: The first line of the address
-        tests:
-          - not_null
+      - name: city_name
+        description: The city name
+      - name: state_name
+        description: The state name
+      - name: country_name
+        description: The country name

@@ -9,12 +9,7 @@ models:
         data_tests:
           - not_null
           - unique
-      - name: order_status_id 
-        description: The natural key of the order status
-        data_tests:
-          - not_null
-          - unique
-      - name: status_description 
+      - name: order_status_name 
         description: The description of the order status (e.g., in_process, approved, backordered, rejected, shipped, cancelled)
         data_tests:
           - not_null
