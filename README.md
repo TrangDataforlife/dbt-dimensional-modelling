@@ -1,3 +1,5 @@
+# I learnt Kimball dimensional model from jonathanneo github
+
 <img src="docs/img/logo.png" align="right" />
 
 # dbt dimensional modelling tutorial
